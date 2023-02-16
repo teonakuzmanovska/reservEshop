@@ -8,96 +8,106 @@
 @{
 }
 
-<h1>Shopping Cart</h1>
+<h1 class="text-center m-5">Shopping Cart</h1>
 
 @if (Model.ProductsInShoppingCarts.Count == 0)
 {
-    <h5>No products in shopping cart</h5>
+<div class="row justify-content-center">
+    <h5 class="text-center">No products in shopping cart.&nbsp</h5>
+    <h5 class="text-center"><a style="color: lightcoral" href="/Products">Add products?</a></h5>
+</div>
 }
 else
 {
-    <div class="row">
-        <div class="form-group">
-            @*<a href="/ShoppingCart/OrderNow" class="btn btn-warning">Order Now</a>*@
-            @if (Model.TotalPrice != 0)
-            {
-                <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
-                    <article>
-                        <script src="https://checkout.stripe.com/checkout.js"
-                                class="stripe-button"
-                                data-key="@Stripe.Value.PublishableKey"
-                                data-locale="auto"
-                                data-description="EShop Application Payment"
-                                data-amount="@(Model.TotalPrice * 100)"
-                                data-label="Pay $@Model.TotalPrice">
-                        </script>
-                    </article>
-                </form>
-            }
+    <div class="row justify-content-center">
+        <div class="col">
+            <table class="table">
+                <thead style="color: lightcoral">
+                    <tr>
+                        <th class="col-md-1">
+                            #
+                        </th>
+                        <th class="col">
+                            Product Name
+                        </th>
+                        <th class="col">
+                            Size
+                        </th>
+                        <th class="col">
+                            Quantity
+                        </th>
+                        <th class="col">
+                            Price
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var i = 1;
+                        foreach (var item in Model.ProductsInShoppingCarts)
+                        {
+                            <tr>
+                                <td>
+                                    @(i++)
+                                </td>
+                                <td>
+                                    <a href="/Products/Details/@item.Product.Id">@item.Product.ProductName</a>
+                                    @*@item.Product.ProductName*@
+                                </td>
+                                <td>
+                                    @item.ProductSize
+                                </td>
+                                <td>
+                                    @item.Quantity
+                                </td>
+                                <td>
+                                    @item.Product.ProductPrice $
+                                </td>
+                                <td>
+                                    <a style="background-color: lightcoral; color: white" class="btn" href="/ShoppingCart/DeleteFromShoppingCart/@item.Product.Id">Remove</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>Total: </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th> @Model.TotalPrice $</th>
+                        <th>
+                            <div class="form-group">
+                                @*<a href="/ShoppingCart/OrderNow" class="btn btn-warning">Order Now</a>*@
+                                @if (Model.TotalPrice != 0)
+                                {
+                                    <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
+                                        <article>
+                                            <script src="https://checkout.stripe.com/checkout.js"
+                                                    class="stripe-button"
+                                                    data-key="@Stripe.Value.PublishableKey"
+                                                    data-locale="auto"
+                                                    data-description="EShop Application Payment"
+                                                    data-amount="@(Model.TotalPrice * 100)"
+                                                    data-label="Reserve">
+                                            </script>
+                                        </article>
+                                    </form>
+                                }
+                            </div>
+                        </th>
+                    </tr>
+                </tfoot>
+
+            </table>
         </div>
     </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="col-md-1">
-                    #
-                </th>
-                <th class="col">
-                    Product Name
-                </th>
-                <th class="col">
-                    Size
-                </th>
-                <th class="col">
-                    Quantity
-                </th>
-                <th class="col">
-                    Price
-                </th>
-                <th>
 
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                var i = 1;
-                foreach (var item in Model.ProductsInShoppingCarts)
-                {
-                        <tr>
-                            <td>
-                                @(i++)
-                            </td>
-                            <td>
-                                @item.Product.ProductName
-                            </td>
-                            <td>
-                                @item.ProductSize
-                            </td>
-                            <td>
-                                @item.Quantity
-                            </td>
-                            <td>
-                                @item.Product.ProductPrice
-                            </td>
-                            <td>
-                                <a class="btn btn-danger" href="/ShoppingCart/DeleteFromShoppingCart/@item.Product.Id">Delete</a>
-                            </td>
-                        </tr>
-                }
-            }
-
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <th>Total: </th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th> @Model.TotalPrice</th>
-            </tr>
-        </tfoot>
-
-    </table>
+    
 }

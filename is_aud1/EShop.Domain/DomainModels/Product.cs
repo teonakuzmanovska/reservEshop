@@ -16,7 +16,7 @@ namespace EShop.Domain.DomainModels
         public string ProductImage { get; set; }
         [Display(Name = "Product specifications")]
         public string ProductDescription { get; set; }
-        [Display(Name = "Product price")]
+        [Display(Name = "Rezervation fee")]
         public int ProductPrice { get; set; }
         public ICollection<ProductsInShoppingCart> ProductsInShoppingCarts { get; set; }
     }

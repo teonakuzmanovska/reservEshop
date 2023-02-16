@@ -1,4 +1,5 @@
 ﻿using EShop.Domain.DomainModels;
+using EShop.Domain;
 using EShop.Domain.Identity;
 using EShop.Domain.Relationships;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
