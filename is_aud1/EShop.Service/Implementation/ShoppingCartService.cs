@@ -54,7 +54,8 @@ namespace EShop.Service.Implementation
             var productList = userShoppingCart.ProductsInShoppingCarts.Select(z => new
             {
                 Quantity = z.Quantity,
-                ProductPrice = z.Product.ProductPrice
+                ProductPrice = z.Product.ProductPrice,
+                ProductSize = z.ProductSize
             });
 
             int totalPrice = 0;

@@ -39,6 +39,7 @@ namespace EShop.Service.Implementation
                         Product = product,
                         ProductId = product.Id,
                         ShoppingCart = userShoppingCart,
+                        ProductSize = item.ProductSize,
                         Quantity = item.Quantity
                     };
                     _productsInShoppingCartRepository.Insert(itemToAdd);

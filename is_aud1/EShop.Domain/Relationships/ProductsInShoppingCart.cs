@@ -18,6 +18,7 @@ namespace EShop.Domain.Relationships
         [ForeignKey("CartId")]
         public ShoppingCart ShoppingCart { get; set; }
 
+        public Size ProductSize { get; set; }
         public int Quantity { get; set; }
     }
 }

@@ -46,6 +46,9 @@ else
                     Product Name
                 </th>
                 <th class="col">
+                    Size
+                </th>
+                <th class="col">
                     Quantity
                 </th>
                 <th class="col">
@@ -61,23 +64,26 @@ else
                 var i = 1;
                 foreach (var item in Model.ProductsInShoppingCarts)
                 {
-                    <tr>
-                        <td>
-                            @(i++)
-                        </td>
-                        <td>
-                            @item.Product.ProductName
-                        </td>
-                        <td>
-                            @item.Quantity
-                        </td>
-                        <td>
-                            @item.Product.ProductPrice
-                        </td>
-                        <td>
-                            <a class="btn btn-danger" href="/ShoppingCart/DeleteFromShoppingCart/@item.Product.Id">Delete</a>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                @(i++)
+                            </td>
+                            <td>
+                                @item.Product.ProductName
+                            </td>
+                            <td>
+                                @item.ProductSize
+                            </td>
+                            <td>
+                                @item.Quantity
+                            </td>
+                            <td>
+                                @item.Product.ProductPrice
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" href="/ShoppingCart/DeleteFromShoppingCart/@item.Product.Id">Delete</a>
+                            </td>
+                        </tr>
                 }
             }
 

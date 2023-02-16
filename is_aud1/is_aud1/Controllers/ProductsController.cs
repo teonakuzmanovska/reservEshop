@@ -35,6 +35,7 @@ namespace is_aud1.Controllers
             
             model.SelectedProduct = product;
             model.ProductId = product.Id;
+            model.ProductSize = EShop.Domain.Size.S;
             model.Quantity = 0;
 
             return View(model);

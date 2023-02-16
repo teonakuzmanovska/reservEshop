@@ -18,6 +18,8 @@ namespace EShop.Domain.Relationships
 
         public Product Product { get; set; }
         public Order Order { get; set; }
+        // po nekoja logika tuka treba da staam size i na view da se bira koj size
+        public Size Size { get; set; }
         public int Quantity { get; set; }
     }
 }

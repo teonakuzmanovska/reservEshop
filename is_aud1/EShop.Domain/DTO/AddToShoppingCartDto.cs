@@ -13,6 +13,8 @@ namespace EShop.Domain.DTO
     {
         public Product SelectedProduct { get; set; }
         public int ProductId { get; set; }
+
+        public Size ProductSize { get; set; }
         public int Quantity { get; set; }
     }
 }

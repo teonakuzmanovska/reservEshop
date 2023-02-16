@@ -10,12 +10,14 @@ namespace EShop.Domain.DomainModels
     public class Product : BaseEntity
     {
         [Required]
-        [Display(Name = "Ime na produkt")]
+        [Display(Name = "Product name")]
         public string ProductName { get; set; }
+        [Display(Name = "Product Image")]
         public string ProductImage { get; set; }
+        [Display(Name = "Product specifications")]
         public string ProductDescription { get; set; }
+        [Display(Name = "Product price")]
         public int ProductPrice { get; set; }
-        public int ProductRating { get; set; }
         public ICollection<ProductsInShoppingCart> ProductsInShoppingCarts { get; set; }
     }
 }
