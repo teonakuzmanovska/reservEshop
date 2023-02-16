@@ -382,3 +382,4 @@ C:\Users\Lenovo\Source\Repos\Integrated_Systems\is_aud1\is_aud1\bin\Debug\netcor
 C:\Users\Lenovo\Source\Repos\Integrated_Systems\is_aud1\is_aud1\obj\Debug\netcoreapp3.1\is_aud1.Views.pdb
 C:\Users\Lenovo\Source\Repos\Integrated_Systems\is_aud1\is_aud1\obj\Debug\netcoreapp3.1\is_aud1.csproj.CopyComplete
 C:\Users\Lenovo\Source\Repos\Integrated_Systems\is_aud1\is_aud1\obj\Debug\netcoreapp3.1\is_aud1.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\is_aud1\bin\Debug\netcoreapp3.1\libman.json

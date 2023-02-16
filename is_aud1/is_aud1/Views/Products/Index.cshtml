@@ -10,27 +10,86 @@
     <a asp-action="Create">Create New</a>
 </p>
 
-@for (var i = 0; i < Model.ToList().Count; i++)
-{
-    var item = Model.ToList()[i];
-
-    if (i % 3 == 0)
+@*@for (var i = 0; i < Model.ToList().Count; i++)
     {
-        @:<div class="row">
-        }
+        var item = Model.ToList()[i];
 
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">@item.ProductName</h5>
-                <p class="card-text">@item.ProductDescription</p>
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
-                <a href="/Products/AddToCart?productId=@item.Id" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-
-        if (i % 3 == 2)
+        if (i % 3 == 0)
         {
-        @:</div>
-    }
+            @:<div class="row">
+            }
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text">@item.ProductDescription</p>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                    <a href="/Products/AddToCart?productId=@item.Id" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }*@
+
+<table class="table" id="productsTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductRating)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    <img src="@item.ProductImage" style="width: 100px" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductRating)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @*@if (User.IsInRole("Administrator") || User.IsInRole("Editor"))
+                        {
+                            <btn data-movie-id="@item.Id" class="btn btn-link js-delete">Delete</btn>
+                        }*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section scripts{
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/customerDatatable.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#productsTable").DataTable({});
+        })
+    </script>
 }
