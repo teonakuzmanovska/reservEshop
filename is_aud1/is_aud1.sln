@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "is_aud1", "is_aud1\is_aud1.csproj", "{1073DC9C-06AA-4AA2-ABB3-C7C26291F382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Web", "is_aud1\EShop.Web.csproj", "{1073DC9C-06AA-4AA2-ABB3-C7C26291F382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Domain", "EShop.Domain\EShop.Domain.csproj", "{FFD128E3-AC36-4031-8A05-74664F79E862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Domain", "EShop.Domain\EShop.Domain.csproj", "{FFD128E3-AC36-4031-8A05-74664F79E862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Repository", "EShop.Repository\EShop.Repository.csproj", "{08034858-4F7F-4E54-A589-40BEEF303005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Repository", "EShop.Repository\EShop.Repository.csproj", "{08034858-4F7F-4E54-A589-40BEEF303005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Service", "EShop.Service\EShop.Service.csproj", "{257B463E-6C9F-470E-A222-CF4BD91C4387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Service", "EShop.Service\EShop.Service.csproj", "{257B463E-6C9F-470E-A222-CF4BD91C4387}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

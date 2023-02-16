@@ -11,6 +11,7 @@ C:\Users\Lenovo\Documents\GitHub\Integrated_Systems\is_aud1\EShop.Domain\obj\Deb
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\bin\Debug\netcoreapp3.1\EShop.Domain.deps.json
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\bin\Debug\netcoreapp3.1\EShop.Domain.dll
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\bin\Debug\netcoreapp3.1\EShop.Domain.pdb
+C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\obj\Debug\netcoreapp3.1\EShop.Domain.csproj.AssemblyReference.cache
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\obj\Debug\netcoreapp3.1\EShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\obj\Debug\netcoreapp3.1\EShop.Domain.AssemblyInfoInputs.cache
 C:\Users\Lenovo\source\repos\Integrated_Systems\is_aud1\EShop.Domain\obj\Debug\netcoreapp3.1\EShop.Domain.AssemblyInfo.cs

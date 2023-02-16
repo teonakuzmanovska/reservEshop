@@ -9,7 +9,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace is_aud1.Controllers
+namespace EShop.Web.Controllers
 {
     public class ShoppingCartController : Controller
     {

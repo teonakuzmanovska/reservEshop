@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BPjMHrZyrnA3XJZjWKfs3HgaZN/lVoOOq+6zvPrElfkQLSRdYiVMm87mVqj3RSs27OBEXMRGSarv0RWtg39ZDg==",
+  "dgSpecHash": "4GpHPtaasGbOsZkYlkgBxOQOIaQ2/SeBZIFQ8OEzIZ8gPmzpegUZIE2RgCdIqIyHahgoYQPgmPLXeEyR5nHmfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\is_aud1.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\EShop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\mailkit\\3.3.0\\mailkit.3.3.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.25\\microsoft.aspnetcore.cryptography.internal.3.1.25.nupkg.sha512",

@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace is_aud1
+namespace EShop.Web
 {
     public class Startup
     {

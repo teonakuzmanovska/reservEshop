@@ -11,7 +11,7 @@ using EShop.Domain.DTO;
 using EShop.Domain.DomainModels;
 using EShop.Repository;
 
-namespace is_aud1.Controllers
+namespace EShop.Web.Controllers
 {
     public class ProductsController : Controller
     {

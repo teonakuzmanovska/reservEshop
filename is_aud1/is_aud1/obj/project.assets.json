@@ -9509,9 +9509,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\is_aud1.csproj",
-      "projectName": "is_aud1",
-      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\is_aud1.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\EShop.Web.csproj",
+      "projectName": "EShop.Web",
+      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\EShop.Web.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Integrated_Systems\\is_aud1\\is_aud1\\obj\\",
       "projectStyle": "PackageReference",

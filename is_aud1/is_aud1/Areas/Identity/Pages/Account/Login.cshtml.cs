@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using EShop.Domain.Identity;
 
-namespace is_aud1.Areas.Identity.Pages.Account
+namespace EShop.Web.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class LoginModel : PageModel

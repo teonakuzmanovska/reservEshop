@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace is_aud1.Controllers
+namespace EShop.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
